@@ -1,0 +1,3 @@
+05.07.19:
+1) 11:00 - 11:20: Preparation (created github account, generated ssh keys for current laptop)
+2) 11:20 - 12:50: Solving exercises from stepik Basic Java course (inside intellij Idea plugin)
