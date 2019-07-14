@@ -22,6 +22,5 @@ class Main {
             BinaryConverter converter = new BinaryConverter(value);
             System.out.println(converter.convert());
         } while (!quit);
-
     }
 }
