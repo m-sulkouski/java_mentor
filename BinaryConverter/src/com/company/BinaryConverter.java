@@ -40,15 +40,15 @@ class BinaryConverter {
 
     public void shiftLeft(int distance) {
         int index =  0;
-        boolean[] temp = new boolean[binaryNumber.length - 1 - distance];
+        boolean[] toBeShifted = new boolean[binaryNumber.length - 1 - distance];
 
-        for (int i = 0; i < temp.length; i++) {
-            temp[i] = binaryNumber[i];
+        for (int i = 0; i < toBeShifted.length; i++) {
+            toBeShifted[i] = binaryNumber[i];
         }
 
         for (int i = distance; i < binaryNumber.length; i++) {
-            binaryNumber[i] = temp[index];
-            if (index < temp.length - 1) {
+            binaryNumber[i] = toBeShifted[index];
+            if (index < toBeShifted.length - 1) {
                 index++;
             }
         }
@@ -59,12 +59,17 @@ class BinaryConverter {
     }
 
     public void shiftRight(int distance) {
+        int length = binaryNumber.length-1;
+        int index = length;
+        boolean[] toBeShifted= new boolean[length - 1 - distance];
 
-        boolean[] shift = new boolean[distance];
+        for (int i = toBeShifted.length - 1; i >= 0; i++) {
+            toBeShifted[i] = binaryNumber[i];
+
+        }
 
 
     }
-
 
     public void convert() {
         int candidate = this.decimalValue;
