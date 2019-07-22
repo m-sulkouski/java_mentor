@@ -3,11 +3,16 @@ package com.company;
 import java.util.Scanner;
 
 class Main {
+
+
     private static final Scanner input = new Scanner(System.in);
     private static boolean quit = false;
     private static BinaryConverter converter = new BinaryConverter();
 
     public static void main(String[] args) {
+        System.out.println(Character.valueOf('\\'));
+        int i = 0b1110001;
+
         boolean valueAvailable = false;
         int value;
 
@@ -125,4 +130,6 @@ class Main {
 
 
     }
+
+
 }
